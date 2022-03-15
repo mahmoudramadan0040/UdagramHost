@@ -1,3 +1,4 @@
+[![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)](https://circleci.com/gh/circleci/circleci-docs)
 # Udagram
 The project is nanodegree project from udacity 
 https://github.com/udacity/nd0067-c4-deployment-process-project-starter 
