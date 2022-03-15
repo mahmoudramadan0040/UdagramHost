@@ -20,3 +20,4 @@ circle ci is trigger change of  the code from github
 ##
 5- deploy backend and frontend 
  > npm run deploy 
+![Pipline](https://user-images.githubusercontent.com/95087747/158470042-df283fc1-f804-4284-83dd-a15723264fa0.PNG)
