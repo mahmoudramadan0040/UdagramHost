@@ -1,65 +1,34 @@
 # Udagram
+The project is nanodegree project from udacity 
+https://github.com/udacity/nd0067-c4-deployment-process-project-starter 
+## Project Hosted in aws
+http://mahmoud-bkt.s3-website-us-east-1.amazonaws.com
 
-This application is provided to you as an alternative starter project if you do not wish to host your own code done in the previous courses of this nanodegree. The udagram application is a fairly simple application that includes all the major components of a Full-Stack web application.
+## screenshots deployment
+### Backend (Elastic Bean stalk)
+ > udagram-api-dev
+ ![eb](https://user-images.githubusercontent.com/95087747/158468527-f114d685-3f0b-40f8-b43c-a18a05086c30.PNG)
+![screencapture-us-east-1-console-aws-amazon-elasticbeanstalk-home-2022-03-15-20_01_52](https://user-images.githubusercontent.com/95087747/158468566-05b0b8fc-cc57-4912-b2e3-ba52e9507cbc.png)
+### Frontend S3
+![s3](https://user-images.githubusercontent.com/95087747/158468652-5bcd67c4-3d46-4bb6-a13d-b082bcbdfd72.PNG)
+### Database (RDS)
+![RDS](https://user-images.githubusercontent.com/95087747/158468746-babbee3d-d0ae-490b-87ca-476d9159c9b0.PNG)
+![RDS_details](https://user-images.githubusercontent.com/95087747/158468754-b48e781c-00aa-40cb-9a7b-c6828b4862f2.PNG)
+### Circleci Pipline deployment
+![circlciSuccess](https://user-images.githubusercontent.com/95087747/158469100-7da1d337-315e-4e20-bba5-8a3966d72de4.PNG)
 
-## Getting Started
+![screencapture-app-circleci-pipelines-github-mahmoudramadan0040-UdagramHost-1-workflows-82aeff43-f02a-4925-b89c-c2c17f1a7c87-jobs-2-2022-03-15-20_00_19](https://user-images.githubusercontent.com/95087747/158468927-655f4204-e95b-4672-8b94-7064f32f221c.png)
+## Architecture for App
+![infrastructureDigram](https://user-images.githubusercontent.com/95087747/158469073-0cce3f4f-59c5-428e-bf31-4923733e5308.PNG)
+## Circle Ci digram
+![Pipline](https://user-images.githubusercontent.com/95087747/158469162-8732e45a-073d-4b94-a2e8-b65183d180f8.PNG)
 
-1. Clone this repo locally into the location of your choice.
-1. Move the content of the udagram folder at the root of the repository as this will become the main content of the project.
-1. Open a terminal and navigate to the root of the repo
-1. follow the instructions in the installation step
-
-The project can run but is missing some information to connect to the database and storage service. These will be setup during the course of the project
-
-### Dependencies
-
-```
-- Node v14.15.1 (LTS) or more recent. While older versions can work it is advisable to keep node to latest LTS version
-
-- npm 6.14.8 (LTS) or more recent, Yarn can work but was not tested for this project
-
-- AWS CLI v2, v1 can work but was not tested for this project
-
-- A RDS database running Postgres.
-
-- A S3 bucket for hosting uploaded pictures.
-
-```
-
-### Installation
-
-Provision the necessary AWS services needed for running the application:
-
-1. In AWS, provision a publicly available RDS database running Postgres. <Place holder for link to classroom article>
-1. In AWS, provision a s3 bucket for hosting the uploaded files. <Place holder for tlink to classroom article>
-1. Export the ENV variables needed or use a package like [dotnev](https://www.npmjs.com/package/dotenv)/.
-1. From the root of the repo, navigate udagram-api folder `cd starter/udagram-api` to install the node_modules `npm install`. After installation is done start the api in dev mode with `npm run dev`.
-1. Without closing the terminal in step 1, navigate to the udagram-frontend `cd starter/udagram-frontend` to intall the node_modules `npm install`. After installation is done start the api in dev mode with `npm run start`.
-
-## Testing
-
-This project contains two different test suite: unit tests and End-To-End tests(e2e). Follow these steps to run the tests.
-
-1. `cd starter/udagram-frontend`
-1. `npm run test`
-1. `npm run e2e`
-
-There are no Unit test on the back-end
-
-### Unit Tests:
-
-Unit tests are using the Jasmine Framework.
-
-### End to End Tests:
-
-The e2e tests are using Protractor and Jasmine.
 
 ## Built With
+
 
 - [Angular](https://angular.io/) - Single Page Application Framework
 - [Node](https://nodejs.org) - Javascript Runtime
 - [Express](https://expressjs.com/) - Javascript API Framework
 
-## License
 
-[License](LICENSE.txt)
